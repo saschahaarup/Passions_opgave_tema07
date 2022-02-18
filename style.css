@@ -58,6 +58,15 @@ header h2 {
   cursor: pointer;
 }
 
+nav {
+  display: none;
+}
+
+.click {
+  display: flex;
+  flex-flow: column;
+}
+
 @media (min-width: 600px) {
   .genrer {
     display: flex;
