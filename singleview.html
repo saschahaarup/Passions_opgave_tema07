@@ -27,9 +27,52 @@
         <button>BLUES</button>
         <button>FUNK</button>
       </div>
-      <section id="content"></section>
+      <section id="content">
+        <article class="vinyler">
+          <img src="" alt="" class="vinyl-img">
+          <h3 class="kunstner"></h3>
+          <p class="navn"></p>
+          <p class="year"></p>
+          <p class="beskrivelse"></p>
+          <p class="pris"></p>
+        </article>
+      </section>
     </main>
     <footer></footer>
     <template></template>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+
+      const jsonUrl = "https://passionprojekt-7e1a.restdb.io/rest/plader";
+      let vinyl;
+
+console.log("ID", id);
+    
+document.addEventListener("DOMContentLoaded", hentData);
+
+async function hentData() {
+  const jsonData = await fetch (`https://passionprojekt-7e1a.restdb.io/rest/plader/${id}`, {
+    headers: {
+      "x-apikey": "620f6a1b34fd6215658587b8"
+    }
+  });
+  vinyl = await jsonData.json();
+  console.log(vinyl);
+  visDetaljer();
+}
+
+      function visDetaljer(){
+        document.querySelector(".vinyl-img").src = `billeder/${vinyl.billede}`;
+        document.querySelector(".navn").textContent = `${vinyl.navn}`;
+        document.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
+        document.querySelector(".year").textContent = `${vinyl.aarstal}`;
+        document.querySelector(".beskrivelse").textContent = `${vinyl.beskrivelse}`;
+        document.querySelector(".pris").textContent = `${vinyl.pris}`;
+      }
+
+      
+    </script>
   </body>
 </html>
