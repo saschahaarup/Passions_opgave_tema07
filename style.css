@@ -21,7 +21,9 @@ header {
 header h2 {
   color: white;
 }
-
+.logo {
+  max-width: 10%;
+}
 .content {
 }
 
