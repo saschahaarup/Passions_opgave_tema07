@@ -7,8 +7,33 @@
     <!-- <link rel="stylesheet" href="style.css" /> -->
     <title>Document</title>
     <style>
+      img {
+        max-width: 100%;
+      }
       .logo {
         max-width: 10%;
+      }
+
+      /* mobil */
+      @media only screen and (max-width: 900px) {
+        .kontakt {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          /* color: white; */
+        }
+      }
+      /* desktop */
+      @media only screen and (max-width: 1800px) {
+        .kontakt {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+        }
+        .txt1 {
+          grid-column: 1/2;
+        }
+        .billede {
+          grid-column: 2/3;
+        }
       }
     </style>
   </head>
@@ -19,20 +44,26 @@
         <h2>Kontakt os</h2>
       </nav>
       <section id="splash"></section>
-      <img class="logo" src="billeder/Logo_vv1.svg" alt="logo" />
+      <img class="logo" src="billeder/logo_VV.svg" alt="logo" />
     </header>
     <main>
       <h1></h1>
-      <section class="om_os"></section>
-      <section class="kontakt_os">
+      <section class="kontakt">
+        <h3 class="txt1">Kontakt informationer:</h3>
+        <h4 class="txt1">Tlf:</h4>
+        <h4 class="txt1">Mail:</h4>
+        <img class="billede1" src="billeder/chaka_khan.png" alt="placeholder" />
+      </section>
+      <section class="adresse">
         <h3>Adresse:</h3>
-        <a href=""></a>
-        <h3>Kontakt informationer:</h3>
-        <h4>Tlf:</h4>
-        <h4>Mail:</h4>
+        <h4>Google maps:</h4>
+        <img src="billeder/chaka_khan.png" alt="placeholder" />
+      </section>
+      <section class="sociale_medier">
         <h3>Vores sociale medier:</h3>
         <a href="">Instagram</a>
         <a href="">Facebook</a>
+        <img src="billeder/chaka_khan.png" alt="placeholder" />
       </section>
     </main>
     <footer></footer>
