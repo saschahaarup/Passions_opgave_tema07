@@ -10,6 +10,14 @@ h1 {
   color: white;
 }
 
+p {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
 header {
   background-image: url(billeder/splashbillede.jpg);
   background-size: cover;
@@ -22,7 +30,9 @@ header h2 {
   color: white;
 }
 
-.content {
+.vinyl {
+  background-size: cover;
+  width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -38,5 +48,29 @@ header h2 {
   }
   button {
     color: #ffffff;
+    margin-top: 2rem;
+  }
+
+  .voresvinyler {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+  }
+  .omos {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    z-index: 1;
+  }
+
+  .vinyl {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  footer {
+    background-color: #df5b42;
   }
 }
