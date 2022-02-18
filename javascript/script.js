@@ -62,8 +62,8 @@ function vis() {
   });
 }
 
-function singleView(hvilken){
-    location.href = `singleview.html?id=${hvilken._id}`;
+function singleView(hvilken) {
+  location.href = `singleview.html?id=${hvilken._id}`;
 }
 
 // Burgermenu
@@ -71,5 +71,4 @@ function singleView(hvilken){
 function MenuClick() {
   document.getElementById("menu_streger").classList.toggle("click");
   document.getElementById("nav").classList.toggle("click");
-  document.getElementById("menu-bg").classList.toggle("click-bg");
 }
