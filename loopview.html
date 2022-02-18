@@ -9,23 +9,31 @@
   </head>
   <body>
     <header>
+      <div id="menu_streger" onclick="MenuClick()">
+        <div id="streg1" class="streg"></div>
+        <div id="streg2" class="streg"></div>
+        <div id="streg3" class="streg"></div>
+      </div>
       <nav>
-        <h2>Vores vinyler</h2>
-        <h2>Kontakt os</h2>
+        <ul>
+          <li><a href="loopview.html">Vores vinyler</a></li>
+          <li><a href="om_os.html">Kontakt os</a></li>
+        </ul>
       </nav>
-      <section id="splash"></section>
       <img class="logo" src="billeder/Logo_vv1.svg" alt="logo" />
+      <section id="splash"></section>
     </header>
     <main>
       <div class="genrer">
-        <button>POP</button>
-        <button>SOUL</button>
-        <button>ELEKTRONISK</button>
-        <button>ROCK</button>
-        <button>PSYCHEDELIC ROCK</button>
-        <button>JAZZ</button>
-        <button>BLUES</button>
-        <button>FUNK</button>
+        <button data-genre="alle" class="valgt">ALLE</button>
+        <button data-genre="pop">POP</button>
+        <button data-genre="soul">SOUL</button>
+        <button data-genre="elektronisk">ELEKTRONISK</button>
+        <button data-genre="rock">ROCK</button>
+        <button data-genre="psychedelic rock">PSYCHEDELIC ROCK</button>
+        <button data-genre="jazz">JAZZ</button>
+        <button data-genre="blues">BLUES</button>
+        <button data-genre="funk">FUNK</button>
       </div>
       <h1></h1>
       <section id="content"></section>
