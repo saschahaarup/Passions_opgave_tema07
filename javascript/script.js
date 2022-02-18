@@ -62,6 +62,10 @@ function vis() {
   });
 }
 
+function singleView(hvilken){
+    location.href = `singleview.html?id=${hvilken._id}`;
+}
+
 // Burgermenu
 
 function MenuClick() {
