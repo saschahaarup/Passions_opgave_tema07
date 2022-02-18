@@ -11,11 +11,11 @@
         max-width: 100%;
       }
       .logo {
-        max-width: 10%;
+        width: 10%;
       }
 
       /* mobil */
-      @media only screen and (max-width: 900px) {
+      @media only screen and (min-width: 400px) {
         .kontakt {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -24,15 +24,60 @@
       }
       /* desktop */
       @media only screen and (max-width: 1800px) {
+        main {
+          padding: 20px;
+          /* color: white; */
+        }
+        .overskrift {
+          display: grid;
+          justify-content: center;
+        }
         .kontakt {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+          grid-template-rows: auto auto;
+        }
+        .kontakt_overskrift {
+          display: grid;
+          justify-content: left;
         }
         .txt1 {
           grid-column: 1/2;
+          grid-row: auto;
+        }
+        .txt2 {
+          grid-column: 1/2;
+          grid-row: auto;
         }
         .billede {
           grid-column: 2/3;
+          grid-row: auto;
+        }
+        .find_os {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+          grid-template-rows: auto auto;
+        }
+        .adresse {
+          grid-column: 2/3;
+          grid-row: auto;
+        }
+        .google_maps {
+          grid-column: 1/2;
+          grid-row: auto;
+        }
+        .sociale_medier {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+          grid-template-rows: auto auto;
+        }
+        .insta {
+          grid-column: 1/2;
+          grid-row: auto;
+        }
+        .face {
+          grid-column: 1/2;
+          grid-row: auto;
         }
       }
     </style>
@@ -47,23 +92,29 @@
       <img class="logo" src="billeder/logo_VV.svg" alt="logo" />
     </header>
     <main>
-      <h1></h1>
+      <h1 class="overskrift">Kontakt os</h1>
+      <h3 class="kontakt_overskrift">Kontakt informationer:</h3>
       <section class="kontakt">
-        <h3 class="txt1">Kontakt informationer:</h3>
         <h4 class="txt1">Tlf:</h4>
-        <h4 class="txt1">Mail:</h4>
-        <img class="billede1" src="billeder/chaka_khan.png" alt="placeholder" />
+        <h4 class="txt2">Mail:</h4>
+        <img class="billede1" src="billeder/vinyl_1.jpg" alt="vinyl" />
       </section>
-      <section class="adresse">
-        <h3>Adresse:</h3>
-        <h4>Google maps:</h4>
-        <img src="billeder/chaka_khan.png" alt="placeholder" />
+
+      <h3>Hvor kan man finde os:</h3>
+      <section class="find_os">
+        <h3 class="adresse">Adresse:</h3>
+        <h4 class="google_maps">Google maps:</h4>
       </section>
+
+      <h3>Find os på de sociale medier:</h3>
       <section class="sociale_medier">
-        <h3>Vores sociale medier:</h3>
-        <a href="">Instagram</a>
-        <a href="">Facebook</a>
-        <img src="billeder/chaka_khan.png" alt="placeholder" />
+        <a class="insta" href="">Instagram</a>
+        <a class="face" href="">Facebook</a>
+        <img
+          class="sociale_medier_billede"
+          src="billeder/vinyl_1.jpg"
+          alt="vinyl"
+        />
       </section>
     </main>
     <footer></footer>
