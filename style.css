@@ -35,6 +35,10 @@ header h2 {
   width: 100%;
 }
 
+.logo {
+  max-width: 10%;
+}
+
 @media (min-width: 600px) {
   .genrer {
     display: flex;
