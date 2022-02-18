@@ -41,11 +41,15 @@ async function hentData(){
 
 function vis(){
     console.log(vinyler);
+    // Definerer konstant for template
     const skabelon = document.querySelector("template").content;
+    // Renser content ID'en
     contentDest.textContent = "";
     vinyler.forEach(vinyl =>{
         if (filter == vinyl.genre || filter == "alle"){
+            // definerer konstant for klon, som template der bliver klonet (tror jeg)
             const klon = skabelon.cloneNode(true);
+            // putter json dataen ind i vores template 
             klon.querySelector(".vinyl-img").src = `billeder/${vinyl.billede}`;
             klon.querySelector(".navn").textContent = `${vinyl.navn}`;
             klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
