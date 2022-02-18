@@ -1,1 +1,42 @@
+img {
+  max-width: 100%;
+}
 
+main {
+  background: black;
+}
+
+h1 {
+  color: white;
+}
+
+header {
+  background-image: url(billeder/splashbillede.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  filter: opacity(80%);
+}
+
+header h2 {
+  color: white;
+}
+
+.content {
+}
+
+@media (min-width: 600px) {
+  .genrer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    background-color: #62c6aa;
+  }
+  button {
+    color: #ffffff;
+  }
+}
