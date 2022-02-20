@@ -20,7 +20,7 @@ img {
     background-image: url("/billeder/vinyl_1.jpg");
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 400px;
     filter: opacity(70%);
   }
   .logo {
@@ -92,7 +92,7 @@ img {
 @media only screen and (min-width: 901px) {
   main {
     background-color: black;
-    padding: 20px;
+    padding: 40px;
     color: white;
     margin: 0px;
   }
@@ -101,7 +101,7 @@ img {
     background-image: url("/billeder/vinyl_1.jpg");
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 300px;
     filter: opacity(70%);
   }
   .logo {
@@ -134,16 +134,21 @@ img {
   .overskrift {
     display: grid;
     justify-content: center;
+    position: relative;
+    top: -240px;
+    font-size: 4rem;
   }
   /* informationer styling */
   .kontakt {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
     grid-template-rows: auto auto;
+    gap: 30px;
   }
   .kontakt_overskrift {
     display: grid;
     justify-content: left;
+    padding-bottom: 30px;
   }
   .txt1 {
     grid-column: 1/2;
@@ -156,19 +161,29 @@ img {
   .billede1 {
     grid-column: 2/3;
     grid-row: auto;
+    width: auto;
+    position: relative;
+    top: -50px;
+    border: solid 2px white;
+  }
+  .placering {
+    text-align: left;
+    height: 60px;
   }
   .find_os {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
+    gap: 30px;
   }
-  .adresse {
+  .adresse1 {
     grid-column: 2/3;
     grid-row: auto;
   }
-  .google_maps {
-    grid-column: 1/2;
+  .adresse2 {
+    grid-column: 2/3;
     grid-row: auto;
+    line-height: 30px;
   }
   .sociale_medier {
     display: grid;
@@ -178,13 +193,53 @@ img {
   .sociale_medier_billede {
     grid-column: 2/3;
     grid-row: auto;
+    border: solid 2px white;
+    overflow: hidden;
+    position: relative;
+    top: -140px;
   }
   .insta {
     grid-column: 1/2;
     grid-row: auto;
+    position: relative;
+    top: -38px;
+    left: 70px;
   }
-  .face {
+  .insta_ikon {
+    max-width: 12%;
     grid-column: 1/2;
     grid-row: auto;
+  }
+  .face {
+    max-width: 18%;
+    grid-column: 1/2;
+    grid-row: auto;
+    position: relative;
+    top: -35px;
+    left: 72px;
+  }
+  .face_ikon {
+    grid-column: 1/2;
+    grid-row: auto;
+    position: relative;
+    left: 18px;
+  }
+  .map {
+    grid-column: 1/2;
+    grid-row: auto;
+    overflow: hidden;
+    padding-bottom: 65.25%;
+    position: relative;
+    height: 0;
+    top: -170px;
+    border: solid 2px white;
+    overflow: hidden;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
