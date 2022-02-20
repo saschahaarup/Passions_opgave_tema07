@@ -20,7 +20,7 @@ img {
     background-image: url("/billeder/vinyl_1.jpg");
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 260px;
     filter: opacity(70%);
   }
   .logo {
@@ -46,46 +46,90 @@ img {
   }
   a:hover {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: rgb(14, 189, 174);
   }
   /* h1 styling */
   .overskrift {
     display: grid;
     justify-content: center;
+    position: relative;
+    top: -170px;
+    font-size: 3rem;
   }
   /* informationer styling */
   .kontakt {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* color: white; */
+    color: white;
+    line-height: 40px;
   }
   .kontakt_overskrift {
     display: grid;
     justify-content: left;
-  }
-  .txt1 {
-  }
-  .txt2 {
+    gap: 30px;
   }
   .billede1 {
+    max-width: 100%;
   }
   .find_os {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: auto;
+    line-height: 50px;
+    order: 1;
   }
-  .adresse {
+  .adresse2 {
+    line-height: 35px;
+    word-wrap: break-word;
+    order: 2;
   }
-  .google_maps {
+  .map {
+    max-width: 84%;
+    overflow: hidden;
+    padding-bottom: 65.25%;
+    position: relative;
+    height: 0;
+    border: solid 2px white;
+    order: 3;
+    object-fit: scale-down;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    order: 3;
   }
   .sociale_medier {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-template-rows: auto auto;
   }
   .sociale_medier_billede {
+    border: solid 2px white;
+    overflow: hidden;
+    max-width: 84%;
+    object-fit: scale-down;
   }
   .insta {
+    position: relative;
+    top: -38px;
+    left: 70px;
+  }
+  .insta_ikon {
+    max-width: 15%;
+    position: relative;
+    left: -20px;
   }
   .face {
+    max-width: 18%;
+    position: relative;
+    top: -35px;
+    left: 72px;
+  }
+  .face_ikon {
+    position: relative;
   }
 }
 /* desktop */
@@ -185,6 +229,24 @@ img {
     grid-row: auto;
     line-height: 30px;
   }
+  .map {
+    grid-column: 1/2;
+    grid-row: auto;
+    overflow: hidden;
+    padding-bottom: 65.25%;
+    position: relative;
+    height: 0;
+    top: -170px;
+    border: solid 2px white;
+    overflow: hidden;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
   .sociale_medier {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
@@ -223,23 +285,5 @@ img {
     grid-row: auto;
     position: relative;
     left: 18px;
-  }
-  .map {
-    grid-column: 1/2;
-    grid-row: auto;
-    overflow: hidden;
-    padding-bottom: 65.25%;
-    position: relative;
-    height: 0;
-    top: -170px;
-    border: solid 2px white;
-    overflow: hidden;
-  }
-  .map iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
   }
 }
