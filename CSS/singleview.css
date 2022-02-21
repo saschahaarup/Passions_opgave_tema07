@@ -80,6 +80,11 @@ button {
   font-family: dazzle-unicase;
   font-size: 0.7rem;
 }
+.back button :hover {
+  background-color: #df5b42;
+  transition: 0.7s;
+}
+
 @media (min-width: 900px) {
   .back-button-container {
     display: flex;
