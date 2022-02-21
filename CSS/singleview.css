@@ -80,7 +80,7 @@ button {
   font-family: dazzle-unicase;
   font-size: 0.7rem;
 }
-button :hover {
+.back :hover {
   background-color: #df5b42;
   transition: 0.7s;
 }
