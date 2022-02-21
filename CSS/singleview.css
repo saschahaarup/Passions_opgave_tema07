@@ -63,7 +63,21 @@ p {
   cursor: pointer;
 }
 
-@media (min-width: 700px) {
+.beskrivelse {
+  max-width: 600px;
+  /* text-align: left; */
+}
+button {
+  background-color: #62c6aa;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  min-height: 30px;
+  min-width: 120px;
+  font-family: dazzle-unicase;
+  font-size: 0.7rem;
+}
+@media (min-width: 900px) {
   .back-button-container {
     display: flex;
     place-content: start;
