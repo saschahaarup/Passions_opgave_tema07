@@ -194,6 +194,38 @@ nav li {
   .face_ikon {
     position: relative;
   }
+  footer {
+    background-color: #df5b42;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+
+  footer .footerlogo {
+    width: 70%;
+    margin-top: 1rem;
+  }
+
+  footer .ikoner {
+    display: block;
+    width: 30px;
+    margin: auto auto;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+    font-family: soleil;
+  }
+
+  footer h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: dazzle-unicase;
+    font-size: 1rem;
+  }
 }
 /* desktop */
 @media only screen and (min-width: 901px) {
@@ -354,6 +386,38 @@ nav li {
 
   nav li {
     font-size: 1.2rem;
+  }
+  footer {
+    background-color: #df5b42;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+
+  footer .footerlogo {
+    width: 70%;
+    margin-top: 1rem;
+  }
+
+  footer .ikoner {
+    display: block;
+    width: 30px;
+    margin: auto auto;
+    gap: 0.5rem;
+    padding-top: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+    font-family: soleil;
+  }
+
+  footer h3 {
+    color: white;
+    text-transform: uppercase;
+    font-family: dazzle-unicase;
+    font-size: 1rem;
   }
 }
 
