@@ -15,5 +15,21 @@ main {
 #content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 60px;
+  gap: 65px;
+  line-height: 30px;
+}
+h3 {
+  font-family: dazzle-unicase;
+  font-size: 1rem;
+  text-align: left;
+}
+
+h4 {
+  font-family: dazzle-unicase;
+}
+
+p {
+  font-family: soleil;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }

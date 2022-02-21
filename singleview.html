@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/singleview.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/mfo6xyh.css"> <!-- fonte :) -->
+    <link rel="stylesheet" href="https://use.typekit.net/mfo6xyh.css" />
+    <!-- fonte :) -->
     <title>Document</title>
   </head>
   <body>
@@ -21,29 +22,19 @@
       </a>
     </header>
     <main>
-      <div class="genrer">
-        <button>POP</button>
-        <button>SOUL</button>
-        <button>ELEKTRONISK</button>
-        <button>ROCK</button>
-        <button>PSYCHEDELIC ROCK</button>
-        <button>JAZZ</button>
-        <button>BLUES</button>
-        <button>FUNK</button>
-      </div>
+      <button class="back">↩</button>
       <section id="content">
         <article class="vinyler">
           <img src="" alt="" class="vinyl-img" />
           <h3 class="kunstner"></h3>
-          <p class="navn"></p>
+          <h4 class="navn"></h4>
           <p class="year"></p>
           <p class="beskrivelse"></p>
           <p class="pris"></p>
         </article>
-        <button class="back">Tilbage-knap (placer rigtigt senere)</button>
       </section>
     </main>
-    <footer></footer>
+    <footer>FOOTER HER</footer>
     <template></template>
 
     <script>
@@ -79,11 +70,11 @@
         document.querySelector(
           ".beskrivelse"
         ).textContent = `${vinyl.beskrivelse}`;
-        document.querySelector(".pris").textContent = `${vinyl.pris}`;
+        document.querySelector(".pris").textContent = `${vinyl.pris},-`;
         document.querySelector(".back").addEventListener("click", gaaTilbage);
       }
 
-      function gaaTilbage(){
+      function gaaTilbage() {
         history.back();
       }
     </script>

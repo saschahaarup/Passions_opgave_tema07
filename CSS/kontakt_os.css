@@ -35,6 +35,11 @@ nav {
   flex-flow: column;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* mobil */
 @media only screen and (max-width: 900px) {
   main {
@@ -54,8 +59,8 @@ nav {
   .logo {
     padding: 20px;
     width: 30%;
-    position: relative;
-    top: -70px;
+    /* position: relative;
+    top: -70px; */
   }
   nav ul {
     /* display: grid; */
@@ -179,9 +184,9 @@ nav {
   .logo {
     padding: 20px;
     width: 10%;
-    position: relative;
+    /* position: relative;
     top: -70px;
-    z-index: +1;
+    z-index: +1; */
   }
   nav ul {
     /* display: grid; */
