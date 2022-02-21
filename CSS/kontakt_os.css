@@ -72,13 +72,6 @@ nav ul {
   top: 0;
 }
 
-.provefb {
-  background-image: url("/billeder/facebook.svg");
-  width: 50px;
-  background-size: cover;
-  color: red;
-}
-
 /* mobil */
 @media only screen and (max-width: 900px) {
   main {
