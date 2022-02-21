@@ -18,9 +18,6 @@ main {
   padding-bottom: 8rem;
 }
 
-@media (max-width: 600px) {
-}
-
 h1 {
   color: white;
   font-family: arya-triple;
@@ -49,18 +46,21 @@ footer .footerlogo {
   margin-top: 1rem;
 }
 
-@media (max-width: 600px) {
-  footer .socialemedier .ikoner {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 1rem;
-    margin-left: 1rem;
-  }
+footer .ikoner {
+  display: flex;
+  width: 60px;
+}
 
-  footer .socialemedier #fblogo {
-    width: 70%;
-    margin-top: 0.1rem;
-  }
+.ikoner .fblogo {
+  width: 50%;
+}
+
+.ikoner .instalogo {
+  width: 80%;
+}
+
+.ikoner img {
+  width: 50px;
 }
 
 footer p {
