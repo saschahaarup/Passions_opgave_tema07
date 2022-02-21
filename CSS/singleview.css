@@ -26,7 +26,10 @@ header {
   justify-content: center;
   max-width: 1200px;
 }
-
+.logo {
+  padding: 20px;
+  width: 310px;
+}
 .vinyl-img {
   margin-bottom: 2rem;
 }
@@ -63,12 +66,31 @@ p {
   cursor: pointer;
 }
 
-.back-button-container {
-  display: flex;
-  place-content: center;
+.beskrivelse {
+  max-width: 600px;
+  /* text-align: left; */
+}
+button {
+  background-color: #62c6aa;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  min-height: 30px;
+  min-width: 120px;
+  font-family: dazzle-unicase;
+  font-size: 0.7rem;
+}
+button :hover {
+  background-color: #df5b42;
+  transition: 0.7s;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
+  .back-button-container {
+    display: flex;
+    place-content: start;
+    margin-top: 4rem;
+  }
   .vinyler {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
