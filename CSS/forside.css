@@ -1,0 +1,14 @@
+.vinyl {
+  background-size: cover;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) {
+  .vinyl {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}

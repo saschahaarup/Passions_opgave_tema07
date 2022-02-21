@@ -56,10 +56,14 @@ footer .ikoner {
 
 footer p {
   font-size: 0.7rem;
+  font-family: soleil;
 }
 
 footer h3 {
   color: white;
+  text-transform: uppercase;
+  font-family: dazzle-unicase;
+  font-size: 1rem;
 }
 
 h2 {
@@ -80,12 +84,6 @@ header {
 
 header h2 {
   color: white;
-}
-
-.vinyl {
-  background-size: cover;
-  width: 100%;
-  margin-top: 2rem;
 }
 
 .logo {
@@ -182,12 +180,6 @@ nav {
     z-index: 1;
   }
 
-  .vinyl {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
   footer {
     background-color: #df5b42;
     text-align: center;
@@ -205,7 +197,15 @@ nav {
 
   footer p {
     font-size: 0.7rem;
+    font-family: soleil;
   }
+
+  footer h3 {
+    text-transform: uppercase;
+    font-family: arya-triple;
+    font-size: 1.5rem;
+  }
+
   footer .ikoner {
     display: flex;
     width: 100px;
