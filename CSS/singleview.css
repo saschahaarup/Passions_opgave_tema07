@@ -12,10 +12,82 @@ main {
   color: white;
 }
 
+header {
+  background: black;
+  height: 50px;
+  opacity: 100%;
+  filter: opacity(100%);
+}
+
 #content {
   margin: auto;
   padding: 10px;
   display: grid;
   justify-content: center;
-  width: 40%;
+  max-width: 600px;
+}
+
+.vinyl-img {
+  margin-bottom: 2rem;
+}
+
+.kunstner {
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: dazzle-unicase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h4 {
+  font-family: dazzle-unicase;
+}
+
+p {
+  font-family: soleil;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.back {
+  color: white;
+  background: none;
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .vinyler {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 50px);
+  }
+
+  .vinyl-img {
+    grid-column: span 2;
+    grid-row: 2;
+  }
+
+  .kunstner {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+
+  .year {
+    grid-row: 3;
+    grid-column: 2 / span 1;
+  }
+
+  .navn {
+    grid-row: 3;
+    grid-column: 1 / span 1;
+  }
+
+  .pris {
+    grid-row: 5;
+    grid-column: 2;
+  }
 }
