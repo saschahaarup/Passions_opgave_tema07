@@ -20,6 +20,10 @@ h2 {
   padding: 2rem;
 }
 
+.vinyl {
+  padding: 1.5rem;
+}
+
 @media (min-width: 600px) {
   .vinyl {
     display: block;
