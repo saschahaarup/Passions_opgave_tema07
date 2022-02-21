@@ -17,3 +17,18 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 60px;
 }
+h3 {
+  font-family: dazzle-unicase;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h4 {
+  font-family: dazzle-unicase;
+}
+
+p {
+  font-family: soleil;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
