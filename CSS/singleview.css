@@ -45,8 +45,7 @@ header {
 }
 
 .kunstner {
-  font-family: dazzle-unicase;
-  font-size: 3rem;
+  font-weight: 300;
   text-align: center;
 }
 
