@@ -55,7 +55,7 @@ function vis() {
       klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
       klon.querySelector(".year").textContent = `${vinyl.aarstal}`;
       klon
-        .querySelector("article")
+        .querySelector(".vinyl-img")
         .addEventListener("click", () => singleView(vinyl));
       contentDest.appendChild(klon);
     }
