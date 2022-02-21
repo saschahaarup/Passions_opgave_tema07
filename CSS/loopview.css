@@ -47,20 +47,26 @@ p {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 @media (min-width: 600px) {
-  .vinyler {
+  .vinyl-info {
     display: grid;
     grid-template-columns: auto minmax(auto, 50px);
-    gap: 1rem;
     margin-bottom: 3rem;
   }
 
   .vinyl-img {
     grid-column: span 2;
+    margin-bottom: 0.5rem;
   }
 
   .kunstner {
     grid-column: span 2;
+    text-align: left;
+    margin-bottom: 1rem;
   }
 
   .navn {
@@ -69,5 +75,6 @@ p {
 
   .year {
     text-align: right;
+    opacity: 80%;
   }
 }
