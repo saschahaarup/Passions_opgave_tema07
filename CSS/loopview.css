@@ -19,6 +19,15 @@ main {
   line-height: 30px;
   margin: 0 2rem;
 }
+
+header {
+  background-image: url("/billeder/splashbillede.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  filter: opacity(80%);
+}
+
 h3 {
   font-family: dazzle-unicase;
   font-size: 1rem;
@@ -49,6 +58,28 @@ p {
 
 button {
   cursor: pointer;
+}
+
+.genrer {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: dazzle-unicase;
+}
+
+button {
+  background-color: #62c6aa;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin: 5px;
+  width: 104px;
+  height: 34px;
+  gap: 20px;
+}
+button :hover {
+  background-color: #b9b9b9;
 }
 
 @media (min-width: 600px) {

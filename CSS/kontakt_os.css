@@ -147,7 +147,7 @@ nav li {
     order: 2;
   }
   .map {
-    max-width: 84%;
+    max-width: 65%;
     overflow: hidden;
     padding-bottom: 65.25%;
     position: relative;
@@ -172,7 +172,7 @@ nav li {
   .sociale_medier_billede {
     border: solid 2px white;
     overflow: hidden;
-    max-width: 84%;
+    max-width: 65%;
     object-fit: scale-down;
   }
   .insta {
@@ -199,32 +199,32 @@ nav li {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
+    padding: 1rem;
+    color: white;
   }
 
   footer .footerlogo {
-    width: 70%;
-    margin-top: 1rem;
-  }
-
-  footer .ikoner {
     display: block;
-    width: 30px;
-    margin: auto auto;
-    gap: 0.5rem;
-    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
   }
 
   footer p {
     font-size: 0.7rem;
     font-family: soleil;
+    padding: 0.5rem;
   }
 
   footer h3 {
-    color: white;
     text-transform: uppercase;
-    font-family: dazzle-unicase;
-    font-size: 1rem;
+    font-family: arya-triple;
+    font-size: 1.5rem;
+  }
+
+  footer .ikoner {
+    display: flex;
+    width: 100px;
   }
 }
 /* desktop */
@@ -265,7 +265,7 @@ nav li {
   }
   a:hover {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: #62c6aa;
   }
   /* h1 styling */
   .overskrift {
@@ -392,32 +392,32 @@ nav li {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
+    padding: 1rem;
+    color: white;
   }
 
   footer .footerlogo {
-    width: 70%;
-    margin-top: 1rem;
-  }
-
-  footer .ikoner {
     display: block;
-    width: 30px;
-    margin: auto auto;
-    gap: 0.5rem;
-    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
   }
 
   footer p {
     font-size: 0.7rem;
     font-family: soleil;
+    padding: 0.5rem;
   }
 
   footer h3 {
-    color: white;
     text-transform: uppercase;
-    font-family: dazzle-unicase;
-    font-size: 1rem;
+    font-family: arya-triple;
+    font-size: 1.5rem;
+  }
+
+  footer .ikoner {
+    display: flex;
+    width: 100px;
   }
 }
 
