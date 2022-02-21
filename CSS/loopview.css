@@ -65,21 +65,25 @@ button {
   gap: 30px;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 60px;
   font-family: dazzle-unicase;
+  text-decoration: none;
 }
 
 button {
   background-color: #62c6aa;
-  color: #ffffff;
-  margin-top: 2rem;
-  margin: 5px;
-  width: 104px;
-  height: 34px;
-  gap: 20px;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  min-height: 30px;
+  min-width: 120px;
+  font-family: dazzle-unicase;
+  font-size: 0.7rem;
 }
-button :hover {
-  background-color: #b9b9b9;
+
+.genrer :hover {
+  background-color: #df5b42;
+  transition: 0.7s;
 }
 
 @media (min-width: 600px) {
