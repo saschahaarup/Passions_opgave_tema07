@@ -49,6 +49,9 @@ footer .footerlogo {
 footer .ikoner {
   display: flex;
   width: 60px;
+  margin: auto auto;
+  gap: 0.5rem;
+  padding-top: 1rem;
 }
 
 footer p {
@@ -202,5 +205,9 @@ nav {
 
   footer p {
     font-size: 0.7rem;
+  }
+  footer .ikoner {
+    display: flex;
+    width: 100px;
   }
 }
