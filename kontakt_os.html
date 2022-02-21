@@ -11,24 +11,31 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- Havde problemer med opsætning af header da splashbilledet blev sat på hele header. 
+      Jeg lavede en ny div rundt om logo og nav så jeg kunne sætte display flex. 
+      Derefter har jeg puttet logo ind i en div med class logo så a href ikke fyldte 100% width. -->
     <header>
-      <div id="menu_streger" onclick="MenuClick()">
-        <div id="streg1" class="streg"></div>
-        <div id="streg2" class="streg"></div>
-        <div id="streg3" class="streg"></div>
+      <div class="navigation">
+        <div class="logo">
+          <a href="forside.html"
+            ><img src="billeder/test2_logo_vv.png" alt="logo" />
+            <!-- <img class="logo" src="billeder/test2_logo_vv.png" alt="logo" /> -->
+          </a>
+        </div>
+        <div id="menu_streger" onclick="MenuClick()">
+          <div id="streg1" class="streg"></div>
+          <div id="streg2" class="streg"></div>
+          <div id="streg3" class="streg"></div>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="loopview.html">Vores vinyler</a></li>
+            <li><a href="kontakt_os.html">Kontakt os</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav id="nav">
-        <ul>
-          <li><a href="loopview.html">Vores vinyler</a></li>
-          <li><a href="kontakt_os.html">Kontakt os</a></li>
-        </ul>
-      </nav>
-
       <!-- logo -->
       <section id="splash"></section>
-      <a href="forside.html"
-        ><img class="logo" src="billeder/test2_logo_vv.png" alt="logo" />
-      </a>
     </header>
 
     <main>
