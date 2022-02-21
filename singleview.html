@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/singleview.css" />
     <title>Document</title>
   </head>
   <body>
@@ -14,7 +15,9 @@
         <h2>Kontakt os</h2>
       </nav>
       <section id="splash"></section>
-      <img class="logo" src="billeder/Logo_vv1.svg" alt="logo" />
+      <a href="forside.html"
+        ><img class="logo" src="billeder/logo_VV.svg" alt="logo" />
+      </a>
     </header>
     <main>
       <div class="genrer">
@@ -27,9 +30,55 @@
         <button>BLUES</button>
         <button>FUNK</button>
       </div>
-      <section id="content"></section>
+      <section id="content">
+        <article class="vinyler">
+          <img src="" alt="" class="vinyl-img" />
+          <h3 class="kunstner"></h3>
+          <p class="navn"></p>
+          <p class="year"></p>
+          <p class="beskrivelse"></p>
+          <p class="pris"></p>
+        </article>
+      </section>
     </main>
     <footer></footer>
     <template></template>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get("id");
+
+      const jsonUrl = "https://passionprojekt-7e1a.restdb.io/rest/plader";
+      let vinyl;
+
+      console.log("ID", id);
+
+      document.addEventListener("DOMContentLoaded", hentData);
+
+      async function hentData() {
+        const jsonData = await fetch(
+          `https://passionprojekt-7e1a.restdb.io/rest/plader/${id}`,
+          {
+            headers: {
+              "x-apikey": "620f6a1b34fd6215658587b8",
+            },
+          }
+        );
+        vinyl = await jsonData.json();
+        console.log(vinyl);
+        visDetaljer();
+      }
+
+      function visDetaljer() {
+        document.querySelector(".vinyl-img").src = `billeder/${vinyl.billede}`;
+        document.querySelector(".navn").textContent = `${vinyl.navn}`;
+        document.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
+        document.querySelector(".year").textContent = `${vinyl.aarstal}`;
+        document.querySelector(
+          ".beskrivelse"
+        ).textContent = `${vinyl.beskrivelse}`;
+        document.querySelector(".pris").textContent = `${vinyl.pris}`;
+      }
+    </script>
   </body>
 </html>
