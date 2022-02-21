@@ -17,6 +17,7 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 65px;
   line-height: 30px;
+  margin: 0 2rem;
 }
 h3 {
   font-family: dazzle-unicase;
@@ -32,4 +33,41 @@ p {
   font-family: soleil;
   font-weight: 300;
   margin-bottom: 0.5rem;
+}
+
+.vinyler p {
+  padding: 0;
+}
+
+.vinyl-img {
+  cursor: pointer;
+}
+
+.kunstner {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .vinyler {
+    display: grid;
+    grid-template-columns: auto minmax(auto, 50px);
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .vinyl-img {
+    grid-column: span 2;
+  }
+
+  .kunstner {
+    grid-column: span 2;
+  }
+
+  .navn {
+    text-align: left;
+  }
+
+  .year {
+    text-align: right;
+  }
 }

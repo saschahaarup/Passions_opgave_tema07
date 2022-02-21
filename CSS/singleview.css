@@ -24,7 +24,7 @@ header {
   padding: 10px;
   display: grid;
   justify-content: center;
-  max-width: 600px;
+  max-width: 1200px;
 }
 
 .vinyl-img {
@@ -35,13 +35,22 @@ header {
   margin-bottom: 2rem;
 }
 
-h3 {
+.pris,
+.year {
+  /* font-size: 1.2rem; */
+  font-family: dazzle-unicase;
+}
+.navn {
+  text-align: center;
+}
+
+.kunstner {
   font-family: dazzle-unicase;
   font-size: 3rem;
   text-align: center;
 }
 
-h4 {
+.navn {
   font-family: dazzle-unicase;
 }
 
@@ -52,23 +61,28 @@ p {
 }
 
 .back {
-  color: white;
-  background: none;
-  border: none;
-  height: 30px;
-  width: 30px;
   cursor: pointer;
+}
+
+.back-button-container {
+  display: flex;
+  place-content: center;
 }
 
 @media (min-width: 700px) {
   .vinyler {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .vinyl-info {
+    display: grid;
     grid-template-columns: auto minmax(auto, 50px);
   }
 
   .vinyl-img {
-    grid-column: span 2;
-    grid-row: 2;
+    grid-column: span 1;
   }
 
   .kunstner {
@@ -77,17 +91,21 @@ p {
   }
 
   .year {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 2 / span 1;
+    place-self: start end;
+    padding: 0;
   }
 
   .navn {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1 / span 1;
+    text-align: left;
   }
 
   .pris {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 2;
+    padding: 0;
   }
 }
