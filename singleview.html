@@ -40,6 +40,7 @@
           <p class="beskrivelse"></p>
           <p class="pris"></p>
         </article>
+        <button class="back">Tilbage-knap (placer rigtigt senere)</button>
       </section>
     </main>
     <footer></footer>
@@ -79,6 +80,11 @@
           ".beskrivelse"
         ).textContent = `${vinyl.beskrivelse}`;
         document.querySelector(".pris").textContent = `${vinyl.pris}`;
+        document.querySelector(".back").addEventListener("click", gaaTilbage);
+      }
+
+      function gaaTilbage(){
+        history.back();
       }
     </script>
   </body>
