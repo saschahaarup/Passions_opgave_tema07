@@ -47,7 +47,7 @@ footer .footerlogo {
 }
 
 footer .ikoner {
-  display: flex;
+  display: block;
   width: 60px;
   margin: auto auto;
   gap: 0.5rem;
