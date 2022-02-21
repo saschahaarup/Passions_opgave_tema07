@@ -24,6 +24,7 @@ img {
   height: 40px;
   margin: 20px;
   cursor: pointer;
+  opacity: 100%;
 }
 
 nav {
@@ -33,11 +34,36 @@ nav {
 .click {
   display: flex;
   flex-flow: column;
+  align-self: flex-end;
+  background-color: #62c6aa;
+  /* transition: 10s; */
+  width: 50vw;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-content: flex-end;
+  z-index: 30;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 20px;
+  list-style-type: none;
+  color: white;
+  flex-direction: column;
+}
+
+#menufold {
+  z-index: 20;
+}
+
+h1 {
+  z-index: 1;
 }
 
 /* mobil */
@@ -58,7 +84,7 @@ nav {
   }
   .logo {
     padding: 20px;
-    width: 30%;
+    width: 110px;
     /* position: relative;
     top: -70px; */
   }
@@ -69,7 +95,6 @@ nav {
     justify-content: right;
     gap: 60px;
     padding: 20px;
-    list-style-type: none;
     color: white;
   }
   /* styling af links */
@@ -183,7 +208,7 @@ nav {
   }
   .logo {
     padding: 20px;
-    width: 10%;
+    width: 120px;
     /* position: relative;
     top: -70px;
     z-index: +1; */
@@ -195,7 +220,6 @@ nav {
     justify-content: right;
     gap: 60px;
     padding: 20px;
-    list-style-type: none;
     color: white;
   }
   /* styling af links */
