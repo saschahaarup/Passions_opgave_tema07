@@ -3,34 +3,87 @@
   margin: 0;
   padding: 0;
 }
+
+* p {
+  padding: 1rem;
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
 
 main {
   background: black;
+  padding-bottom: 8rem;
+}
+
+@media (max-width: 600px) {
 }
 
 h1 {
   color: white;
   font-family: arya-triple;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
+  padding: 2rem;
 }
 
 p {
+  color: white;
+  font-family: soleil;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+footer {
+  background-color: #df5b42;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+
+footer .footerlogo {
+  width: 70%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  footer .socialemedier .ikoner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  footer .socialemedier #fblogo {
+    width: 70%;
+    margin-top: 0.1rem;
+  }
+}
+
+footer p {
+  font-size: 0.7rem;
+}
+
+footer h3 {
   color: white;
 }
 
 h2 {
   color: white;
+  font-family: dazzle-unicase;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
 }
 
 header {
   background-image: url("/billeder/splashbillede.jpg");
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 300px;
   filter: opacity(80%);
 }
 
@@ -41,6 +94,7 @@ header h2 {
 .vinyl {
   background-size: cover;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .logo {
@@ -85,6 +139,14 @@ nav {
     padding: 40px;
   }
 
+  header {
+    background-image: url("/billeder/splashbillede.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    filter: opacity(80%);
+  }
+
   button {
     background-color: #62c6aa;
     color: #ffffff;
@@ -96,6 +158,24 @@ nav {
   }
   button :hover {
     background-color: #b9b9b9;
+  }
+
+  h1 {
+    color: white;
+    font-family: arya-triple;
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  h2 {
+    font-family: dazzle-unicase;
+    font-size: 3rem;
+  }
+
+  p {
+    text-align: center;
+    padding: 3rem;
   }
 
   .voresvinyler {
@@ -119,5 +199,20 @@ nav {
   }
   footer {
     background-color: #df5b42;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+
+  footer .footerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  footer p {
+    font-size: 0.7rem;
   }
 }
