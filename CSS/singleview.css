@@ -63,12 +63,12 @@ p {
   cursor: pointer;
 }
 
-.back-button-container {
-  display: flex;
-  place-content: center;
-}
-
 @media (min-width: 700px) {
+  .back-button-container {
+    display: flex;
+    place-content: start;
+    margin-top: 4rem;
+  }
   .vinyler {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
