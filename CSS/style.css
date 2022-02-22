@@ -22,14 +22,11 @@ h1 {
   color: white;
   font-family: arya-triple;
   font-size: 3rem;
-  text-align: center;
-  padding: 2rem;
 }
 
 p {
   color: white;
   font-family: soleil;
-  text-align: center;
   line-height: 1.5rem;
 }
 
@@ -38,17 +35,19 @@ footer {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 2rem;
+  padding-top: 0.5rem;
 }
 
 footer .footerlogo {
-  width: 70%;
+  display: block;
+  margin: auto;
+  width: 50%;
   margin-top: 1rem;
 }
 
 footer .ikoner {
   display: block;
-  width: 50px;
+  width: 30px;
   margin: auto auto;
   gap: 0.5rem;
   padding-top: 1rem;
@@ -56,17 +55,19 @@ footer .ikoner {
 
 footer p {
   font-size: 0.7rem;
+  font-family: soleil;
 }
 
 footer h3 {
   color: white;
+  text-transform: uppercase;
+  font-family: dazzle-unicase;
+  font-size: 1rem;
 }
 
 h2 {
   color: white;
   font-family: dazzle-unicase;
-  text-align: center;
-  padding: 2rem;
   font-size: 2rem;
 }
 
@@ -82,14 +83,8 @@ header h2 {
   color: white;
 }
 
-.vinyl {
-  background-size: cover;
-  width: 100%;
-  margin-top: 2rem;
-}
-
 .logo {
-  max-width: 10%;
+  max-width: 15%;
 }
 
 /* BURGERMENU */
@@ -172,8 +167,9 @@ nav li {
     background-image: url("/billeder/splashbillede.jpg");
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 600px;
     filter: opacity(80%);
+    background-position: 0 70%;
   }
 
   button {
@@ -192,19 +188,13 @@ nav li {
   h1 {
     color: white;
     font-family: arya-triple;
-    font-size: 4rem;
-    text-align: center;
-    padding: 2rem;
+    font-size: 5.5rem;
+    font-weight: 400;
   }
 
   h2 {
     font-family: dazzle-unicase;
     font-size: 3rem;
-  }
-
-  p {
-    text-align: center;
-    padding: 3rem;
   }
 
   .voresvinyler {
@@ -220,12 +210,6 @@ nav li {
     z-index: 1;
   }
 
-  .vinyl {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
   footer {
     background-color: #df5b42;
     text-align: center;
@@ -238,15 +222,24 @@ nav li {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 35%;
+    margin-top: 0%;
   }
 
   footer p {
     font-size: 0.7rem;
+    font-family: soleil;
+    padding: 0.5rem;
   }
+
+  footer h3 {
+    text-transform: uppercase;
+    font-family: arya-triple;
+    font-size: 1.5rem;
+  }
+
   footer .ikoner {
     display: flex;
     width: 100px;
-    margin-top: 1rem;
   }
 }

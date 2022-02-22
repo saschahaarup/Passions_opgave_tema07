@@ -24,9 +24,12 @@ header {
   padding: 10px;
   display: grid;
   justify-content: center;
-  max-width: 600px;
+  max-width: 1200px;
 }
-
+.logo {
+  padding: 20px;
+  width: 310px;
+}
 .vinyl-img {
   margin-bottom: 2rem;
 }
@@ -35,13 +38,21 @@ header {
   margin-bottom: 2rem;
 }
 
-h3 {
+.pris,
+.year {
+  /* font-size: 1.2rem; */
   font-family: dazzle-unicase;
-  font-size: 3rem;
+}
+.navn {
   text-align: center;
 }
 
-h4 {
+.kunstner {
+  font-weight: 300;
+  text-align: center;
+}
+
+.navn {
   font-family: dazzle-unicase;
 }
 
@@ -52,23 +63,47 @@ p {
 }
 
 .back {
-  color: white;
-  background: none;
-  border: none;
-  height: 30px;
-  width: 30px;
   cursor: pointer;
 }
 
-@media (min-width: 700px) {
+.beskrivelse {
+  max-width: 600px;
+  /* text-align: left; */
+}
+button {
+  background-color: #62c6aa;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  min-height: 30px;
+  min-width: 120px;
+  font-family: dazzle-unicase;
+  font-size: 0.7rem;
+}
+.back:hover {
+  background-color: #df5b42;
+  transition: 0.7s;
+}
+
+@media (min-width: 900px) {
+  .back-button-container {
+    display: flex;
+    place-content: end;
+    margin-top: 8rem;
+  }
   .vinyler {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .vinyl-info {
     display: grid;
     grid-template-columns: auto minmax(auto, 50px);
   }
 
   .vinyl-img {
-    grid-column: span 2;
-    grid-row: 2;
+    grid-column: span 1;
   }
 
   .kunstner {
@@ -77,17 +112,21 @@ p {
   }
 
   .year {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 2 / span 1;
+    place-self: start end;
+    padding: 0;
   }
 
   .navn {
-    grid-row: 3;
+    grid-row: 1;
     grid-column: 1 / span 1;
+    text-align: left;
   }
 
   .pris {
-    grid-row: 5;
+    grid-row: 3;
     grid-column: 2;
+    padding: 0;
   }
 }
