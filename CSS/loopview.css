@@ -18,10 +18,7 @@ main {
   gap: 65px;
   line-height: 30px;
 }
-.logo {
-  padding: 20px;
-  width: 310px;
-}
+
 header {
   background-image: url("/billeder/splashbillede.jpg");
   background-size: cover;

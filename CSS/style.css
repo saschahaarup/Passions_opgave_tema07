@@ -84,7 +84,8 @@ header h2 {
 }
 
 .logo {
-  max-width: 15%;
+  width: 110px;
+  padding: 20px;
 }
 
 /* BURGERMENU */
@@ -241,5 +242,11 @@ nav li {
   footer .ikoner {
     display: flex;
     width: 100px;
+  }
+}
+
+@media (min-width: 901px) {
+  .logo {
+    width: 120px;
   }
 }
