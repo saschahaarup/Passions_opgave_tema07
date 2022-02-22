@@ -7,6 +7,13 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  color: white;
+  font-family: arya-triple;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
 /* BURGERMENU */
 
 .streg {
