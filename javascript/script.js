@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", start);
 
 // Definerer filterKnapper og siger de skal gå til filtrer funktionen når de bliver klikket
 function start() {
+  console.log("start");
   const filterKnapper = document.querySelectorAll(".genrer button");
   filterKnapper.forEach((knap) =>
     knap.addEventListener("click", filtrerVinyler)
@@ -64,16 +65,4 @@ function vis() {
 
 function singleView(hvilken) {
   location.href = `singleview.html?id=${hvilken._id}`;
-}
-
-// Burgermenu
-
-function MenuClick() {
-  // jeg har her valgt at putte class .click på menufold som er en div med id'et #menufold.
-  // Det betyder at den styling der bliver puttet på click, kommmer rundt om både liste-elementer og burger ikonet.
-  // Der er blevet behov for at putte class .click på nav også...?
-
-  // document.getElementById("menu_streger").classList.toggle("click");
-  document.getElementById("nav").classList.toggle("click");
-  document.getElementById("menufold").classList.toggle("click");
 }

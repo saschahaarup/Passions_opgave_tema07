@@ -26,10 +26,7 @@ header {
   justify-content: center;
   max-width: 1200px;
 }
-.logo {
-  padding: 20px;
-  width: 310px;
-}
+
 .vinyl-img {
   margin-bottom: 2rem;
 }
@@ -54,6 +51,10 @@ header {
 
 .navn {
   font-family: dazzle-unicase;
+}
+
+h1 {
+  padding-top: 40px;
 }
 
 p {

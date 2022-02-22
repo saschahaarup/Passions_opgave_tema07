@@ -84,7 +84,8 @@ header h2 {
 }
 
 .logo {
-  max-width: 15%;
+  width: 110px;
+  padding: 20px;
 }
 
 /* BURGERMENU */
@@ -278,5 +279,11 @@ nav li {
   .vv a:hover {
     color: #df5b42;
     transition: 0.7s;
+  }
+}
+
+@media (min-width: 901px) {
+  .logo {
+    width: 120px;
   }
 }

@@ -7,6 +7,13 @@ img {
   max-width: 100%;
 }
 
+h1 {
+  color: white;
+  font-family: arya-triple;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
 /* BURGERMENU */
 
 .streg {
@@ -83,7 +90,7 @@ nav li {
   }
   /* header styling */
   header {
-    background-image: url("/billeder/vinyl_1.jpg");
+    background-image: url("/billeder/vinyl_1.png");
     background-size: cover;
     width: 100%;
     height: 260px;
@@ -153,7 +160,7 @@ nav li {
     order: 3;
   }
   .map {
-    max-width: 100%;
+    max-width: 90vw;
     overflow: hidden;
     padding-bottom: 65.25%;
     position: relative;

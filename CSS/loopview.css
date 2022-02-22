@@ -18,16 +18,16 @@ main {
   gap: 65px;
   line-height: 30px;
 }
-.logo {
-  padding: 20px;
-  width: 310px;
-}
+
 header {
   background-image: url("/billeder/splashbillede.jpg");
   background-size: cover;
   width: 100%;
   height: 500px;
   filter: opacity(80%);
+}
+h1 {
+  text-align: center;
 }
 
 h3 {
@@ -87,6 +87,10 @@ button {
 .genrer :hover {
   background-color: #df5b42;
   transition: 0.7s;
+}
+
+.valgt {
+  background-color: #df5b42;
 }
 
 @media (min-width: 600px) {
