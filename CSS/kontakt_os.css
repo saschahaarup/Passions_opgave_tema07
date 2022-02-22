@@ -81,40 +81,6 @@ nav li {
   font-size: 1.2rem;
 }
 
-/*footer*/
-footer {
-  background-color: #df5b42;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 1rem;
-  color: white;
-}
-
-footer .footerlogo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-}
-
-footer p {
-  font-size: 0.7rem;
-  font-family: soleil;
-  padding: 0.5rem;
-}
-
-footer h3 {
-  text-transform: uppercase;
-  font-family: arya-triple;
-  font-size: 1.5rem;
-}
-
-footer .ikoner {
-  display: flex;
-  width: 100px;
-}
-
 @media (min-width: 1000px) {
   .click {
     width: 20vw;
@@ -166,19 +132,19 @@ footer .ikoner {
   .overskrift {
     display: grid;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: arya-triple;
     font-weight: normal;
-    height: 70px;
+    height: 90px;
   }
   /* kontakt styling */
   .kontakt_overskrift {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     font-size: 1rem;
     font-family: dazzle-unicase;
     gap: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .kontakt {
     display: grid;
@@ -189,6 +155,14 @@ footer .ikoner {
     font-size: 0.8rem;
     font-family: soleil;
   }
+  .txt1 {
+    display: grid;
+    justify-content: center;
+  }
+  .txt2 {
+    display: grid;
+    justify-content: center;
+  }
   .billede1 {
     max-width: 100%;
     order: 4;
@@ -196,7 +170,7 @@ footer .ikoner {
   /* sociale medier styling */
   .sociale_medier {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     font-size: 1rem;
     font-family: dazzle-unicase;
     gap: 20px;
@@ -215,33 +189,35 @@ footer .ikoner {
     grid-row: 1/2;
     width: 50%;
     position: relative;
-    left: -20px;
+    left: 100px;
   }
   .insta_tekst {
     grid-column: 2/3;
     grid-row: 1/2;
     font-family: soleil;
     position: relative;
-    top: 20px;
-    left: -70px;
+    top: 26px;
+    left: 11px;
   }
   .face_ikon {
     grid-column: 1/2;
     grid-row: 2/3;
     width: 28%;
+    position: relative;
+    left: 120px;
   }
   .face_tekst {
     grid-column: 2/3;
     grid-row: 2/3;
     font-family: soleil;
     position: relative;
-    top: 10px;
-    left: -70px;
+    top: 16px;
+    left: 12px;
   }
   /* placering styling */
   .placering {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     font-size: 1rem;
     font-family: dazzle-unicase;
     height: 60px;
@@ -249,7 +225,7 @@ footer .ikoner {
   }
   .adresse1 {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     font-size: 1rem;
     font-family: dazzle-unicase;
     line-height: 35px;
@@ -257,11 +233,11 @@ footer .ikoner {
   }
   .adresse2 {
     display: grid;
-    justify-content: left;
+    justify-content: center;
     font-size: 0.8rem;
     font-family: soleil;
     line-height: 1.5rem;
-    height: 110px;
+    height: 70px;
   }
   /* google maps styling */
   .map_wrapper {
