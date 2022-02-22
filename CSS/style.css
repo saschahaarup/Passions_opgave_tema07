@@ -153,6 +153,27 @@ nav li {
   z-index: 20;
 }
 
+.vv img {
+  margin: 0 auto;
+  display: block;
+  background-color: #62c6aa;
+  color: #fff;
+  border: none;
+  padding: 2px;
+  width: 98px;
+  height: 40px;
+}
+
+.vv button:hover {
+  background-color: #df5b42;
+  transition: 0.7s;
+}
+
+.vv img:hover {
+  background-color: #df5b42;
+  transition: 0.7s;
+}
+
 @media (min-width: 600px) {
   /* knapper */
   .genrer {
@@ -241,5 +262,21 @@ nav li {
   footer .ikoner {
     display: flex;
     width: 100px;
+  }
+  .vv {
+    display: flex;
+    justify-content: center;
+  }
+  .vv a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    text-decoration: none;
+  }
+
+  .vv a:hover {
+    color: #df5b42;
+    transition: 0.7s;
   }
 }
