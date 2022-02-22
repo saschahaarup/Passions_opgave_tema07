@@ -92,6 +92,10 @@ button {
   transition: 0.7s;
 }
 
+.valgt {
+  background-color: #df5b42;
+}
+
 @media (min-width: 600px) {
   .vinyl-info {
     display: grid;
