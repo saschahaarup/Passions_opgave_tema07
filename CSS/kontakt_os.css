@@ -153,7 +153,7 @@ nav li {
     order: 3;
   }
   .map {
-    max-width: 100%;
+    max-width: 90vw;
     overflow: hidden;
     padding-bottom: 65.25%;
     position: relative;
