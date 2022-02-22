@@ -10,6 +10,7 @@
     <!-- fonte :) -->
     <title>Document</title>
   </head>
+
   <body>
     <header>
       <div class="navigation">
@@ -88,7 +89,6 @@
       const urlParams = new URLSearchParams(window.location.search);
       const id = urlParams.get("id");
 
-      const jsonUrl = "https://passionprojekt-7e1a.restdb.io/rest/plader";
       let vinyl;
 
       console.log("ID", id);
@@ -125,7 +125,6 @@
         history.back();
       }
     </script>
-
-    <script src="javascript/script.js"></script>
+    <script src="javascript/burger.js"></script>
   </body>
 </html>
