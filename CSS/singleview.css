@@ -53,6 +53,10 @@ header {
   font-family: dazzle-unicase;
 }
 
+h1 {
+  padding-top: 40px;
+}
+
 p {
   font-family: soleil;
   font-weight: 300;
