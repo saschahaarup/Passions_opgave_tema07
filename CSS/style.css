@@ -129,7 +129,7 @@ nav {
     background-image: url("/billeder/splashbillede.jpg");
     background-size: cover;
     width: 100%;
-    height: 500px;
+    height: 600px;
     filter: opacity(80%);
     background-position: 0 70%;
   }
@@ -151,6 +151,7 @@ nav {
     color: white;
     font-family: arya-triple;
     font-size: 5.5rem;
+    font-weight: 400;
   }
 
   h2 {
