@@ -168,6 +168,8 @@ footer .ikoner {
     justify-content: center;
     font-size: 2rem;
     font-family: arya-triple;
+    font-weight: normal;
+    height: 70px;
   }
   /* kontakt styling */
   .kontakt_overskrift {
@@ -176,17 +178,20 @@ footer .ikoner {
     font-size: 1rem;
     font-family: dazzle-unicase;
     gap: 20px;
+    padding-bottom: 20px;
   }
   .kontakt {
     display: grid;
     grid-column: 1fr;
     grid-row: auto;
-    line-height: 35px;
+    height: 640px;
+    line-height: 20px;
     font-size: 0.8rem;
     font-family: soleil;
   }
   .billede1 {
     max-width: 100%;
+    order: 4;
   }
   /* sociale medier styling */
   .sociale_medier {
@@ -195,33 +200,43 @@ footer .ikoner {
     font-size: 1rem;
     font-family: dazzle-unicase;
     gap: 20px;
+    padding-top: 30px;
+    order: 2;
   }
   .sociale_medier_ikoner {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    padding-bottom: 40px;
+    order: 3;
   }
   .insta_ikon {
     grid-column: 1/2;
     grid-row: 1/2;
     width: 50%;
     position: relative;
-    left: -15px;
+    left: -20px;
   }
   .insta_tekst {
     grid-column: 2/3;
     grid-row: 1/2;
     font-family: soleil;
+    position: relative;
+    top: 20px;
+    left: -70px;
   }
   .face_ikon {
     grid-column: 1/2;
     grid-row: 2/3;
-    width: 30%;
+    width: 28%;
   }
   .face_tekst {
     grid-column: 2/3;
     grid-row: 2/3;
     font-family: soleil;
+    position: relative;
+    top: 10px;
+    left: -70px;
   }
   /* placering styling */
   .placering {
@@ -229,7 +244,7 @@ footer .ikoner {
     justify-content: left;
     font-size: 1rem;
     font-family: dazzle-unicase;
-    gap: 20px;
+    height: 60px;
     line-height: 35px;
   }
   .adresse1 {
@@ -237,8 +252,8 @@ footer .ikoner {
     justify-content: left;
     font-size: 1rem;
     font-family: dazzle-unicase;
-    gap: 20px;
     line-height: 35px;
+    height: 40px;
   }
   .adresse2 {
     display: grid;
@@ -246,12 +261,13 @@ footer .ikoner {
     font-size: 0.8rem;
     font-family: soleil;
     line-height: 1.5rem;
-    gap: 20px;
+    height: 110px;
   }
   /* google maps styling */
   .map_wrapper {
     width: 100%;
     height: 100%;
+    padding-bottom: 30px;
   }
   .map {
     max-width: 90vw;
@@ -268,13 +284,12 @@ footer .ikoner {
     width: 100%;
     position: absolute;
   }
-
+  /* footer styling */
   footer {
     background-color: #df5b42;
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem;
     color: white;
   }
 
@@ -282,7 +297,8 @@ footer .ikoner {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 50%;
+    margin-top: 0%;
   }
 
   footer p {
@@ -294,12 +310,15 @@ footer .ikoner {
   footer h3 {
     text-transform: uppercase;
     font-family: arya-triple;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
   }
 
   footer .ikoner {
     display: flex;
-    width: 100px;
+    width: 70px;
+    position: relative;
+    left: 35px;
   }
 }
 
@@ -483,7 +502,6 @@ footer .ikoner {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 1rem;
     color: white;
   }
 
@@ -491,7 +509,8 @@ footer .ikoner {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 35%;
+    margin-top: 0%;
   }
 
   footer p {
@@ -504,10 +523,13 @@ footer .ikoner {
     text-transform: uppercase;
     font-family: arya-triple;
     font-size: 1.5rem;
+    text-align: center;
   }
 
   footer .ikoner {
     display: flex;
     width: 100px;
+    position: relative;
+    left: 190px;
   }
 }
