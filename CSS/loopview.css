@@ -29,6 +29,9 @@ header {
   height: 500px;
   filter: opacity(80%);
 }
+h1 {
+  text-align: center;
+}
 
 h3 {
   font-family: dazzle-unicase;
