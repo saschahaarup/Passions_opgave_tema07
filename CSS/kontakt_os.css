@@ -346,6 +346,7 @@ nav li {
     font-family: arya-triple;
     font-weight: normal;
     font-size: 4rem;
+    height: 120px;
   }
   /* informationer styling */
   .kontakt {
