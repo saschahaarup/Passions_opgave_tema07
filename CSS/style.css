@@ -92,7 +92,7 @@ header h2 {
 .streg {
   height: 3px;
   width: 100%;
-  background-color: #b9b9b9;
+  background-color: white;
   display: block;
   border-radius: 5px;
   transition: 0.3s ease;
@@ -104,15 +104,53 @@ header h2 {
   height: 40px;
   margin: 20px;
   cursor: pointer;
+  opacity: 100%;
+  margin-left: auto;
 }
 
 nav {
   display: none;
+  text-align: center;
 }
 
 .click {
   display: flex;
   flex-flow: column;
+  /* Dette er hvis det hele skal placeres i højre side, 
+  men man kan ikke gøre det hvis li elementerne skal placeres i midten */
+  /* place-items: end; */
+  background-color: #62c6aa;
+  /* transition: 10s; */
+  opacity: 95%;
+  width: 40vw;
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* align-content: flex-end; */
+  z-index: 30;
+  place-content: right;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+  gap: 40px;
+  /* padding: 20px; */
+  list-style-type: none;
+  color: white;
+  flex-direction: column;
+}
+
+nav li {
+  font-size: 1rem;
+}
+
+#menufold {
+  z-index: 20;
 }
 
 @media (min-width: 600px) {

@@ -12,14 +12,30 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h2>Vores vinyler</h2>
-        <h2>Kontakt os</h2>
-      </nav>
-      <section id="splash"></section>
-      <a href="forside.html"
-        ><img class="logo" src="billeder/test2_logo_vv.png" alt="logo" />
-      </a>
+      <div class="navigation">
+        <!-- logo -->
+        <div class="logo">
+          <a href="forside.html"
+            ><img src="billeder/test2_logo_vv.png" alt="logo" />
+            <!-- <img class="logo" src="billeder/test2_logo_vv.png" alt="logo" /> -->
+          </a>
+        </div>
+        <div id="menufold">
+          <div id="menu_streger" onclick="MenuClick()">
+            <div id="streg1" class="streg"></div>
+            <div id="streg2" class="streg"></div>
+            <div id="streg3" class="streg"></div>
+          </div>
+          <nav id="nav">
+            <ul>
+              <li><a href="loopview.html">Vores vinyler</a></li>
+              <li><a href="kontakt_os.html">Kontakt os</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- <section id="splash"></section> -->
+      <div id="splash"></div>
     </header>
     <main>
       <div class="back-button-container">
@@ -109,5 +125,7 @@
         history.back();
       }
     </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
