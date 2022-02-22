@@ -133,6 +133,7 @@ nav li {
   }
   .billede1 {
     max-width: 100%;
+    border: solid 2px white;
   }
   .find_os {
     display: grid;
@@ -146,15 +147,19 @@ nav li {
     word-wrap: break-word;
     order: 2;
   }
+  .map_wrapper {
+    width: 408px;
+    height: 300px;
+    order: 3;
+  }
   .map {
-    max-width: 65%;
+    max-width: 100%;
     overflow: hidden;
     padding-bottom: 65.25%;
     position: relative;
     height: 0;
     border: solid 2px white;
-    order: 3;
-    object-fit: scale-down;
+    order: 4;
   }
   .map iframe {
     left: 0;
@@ -162,18 +167,21 @@ nav li {
     height: 100%;
     width: 100%;
     position: absolute;
-    order: 3;
+    order: 4;
   }
   .sociale_medier {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
     grid-template-rows: auto auto;
   }
+  .billede_wrapper {
+    width: 408px;
+    height: 300px;
+  }
   .sociale_medier_billede {
     border: solid 2px white;
     overflow: hidden;
-    max-width: 65%;
-    object-fit: scale-down;
+    max-width: 100%;
   }
   .insta {
     position: relative;
@@ -325,13 +333,11 @@ nav li {
   .map {
     grid-column: 1/2;
     grid-row: auto;
-    overflow: hidden;
     padding-bottom: 65.25%;
     position: relative;
     height: 0;
     top: -170px;
     border: solid 2px white;
-    overflow: hidden;
   }
   .map iframe {
     left: 0;
@@ -349,7 +355,6 @@ nav li {
     grid-column: 2/3;
     grid-row: auto;
     border: solid 2px white;
-    overflow: hidden;
     position: relative;
     top: -140px;
   }
