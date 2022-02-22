@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* BURGERMENU */
+
+.streg {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  margin-top: 5px;
+}
+
+#menu_streger {
+  width: 30px;
+  height: 40px;
+  margin: 20px;
+  cursor: pointer;
+  opacity: 100%;
+  margin-left: auto;
+}
+
+nav {
+  display: none;
+  text-align: center;
+}
+
+.click {
+  display: flex;
+  flex-flow: column;
+  /* Dette er hvis det hele skal placeres i højre side, 
+      men man kan ikke gøre det hvis li elementerne skal placeres i midten */
+  /* place-items: end; */
+  background-color: #62c6aa;
+  /* transition: 10s; */
+  opacity: 95%;
+  width: 40vw;
+  height: 100vh;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  /* align-content: flex-end; */
+  z-index: 30;
+  place-content: right;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: nowrap;
+  /* justify-content: space-between; */
+  gap: 40px;
+  /* padding: 20px; */
+  list-style-type: none;
+  color: white;
+  flex-direction: column;
+}
+
+nav li {
+  font-size: 1rem;
+}
+
+#menufold {
+  z-index: 20;
+}
+
+.click {
+  width: 30vw;
+}
+
+nav li {
+  font-size: 1.2rem;
+}
+
+/*footer*/
+footer {
+  background-color: #df5b42;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  color: white;
+}
+
+footer .footerlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+footer p {
+  font-size: 0.7rem;
+  font-family: soleil;
+  padding: 0.5rem;
+}
+
+footer h3 {
+  text-transform: uppercase;
+  font-family: arya-triple;
+  font-size: 1.5rem;
+}
+
+footer .ikoner {
+  display: flex;
+  width: 100px;
+}
+
+@media (min-width: 1000px) {
+  .click {
+    width: 20vw;
+  }
+  nav li {
+    font-size: 1.8rem;
+  }
+}
+
+/* styling af siden */
+/* mobil */
+@media only screen and (max-width: 900px) {
+  main {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    margin: 0px;
+  }
+  /* header styling */
+  header {
+    background-image: url("/billeder/vinyl_1.png");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+  }
+  .logo {
+    padding: 20px;
+    width: 110px;
+    /* position: relative;
+      top: -70px; */
+  }
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 20px;
+    color: white;
+  }
+  /* styling af links */
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    text-decoration: none;
+    color: rgb(14, 189, 174);
+  }
+  /* h1 styling */
+  .overskrift {
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: arya-triple;
+  }
+  /* kontakt styling */
+  .kontakt_overskrift {
+    display: grid;
+    justify-content: left;
+    font-size: 1rem;
+    font-family: dazzle-unicase;
+    gap: 20px;
+  }
+  .kontakt {
+    display: grid;
+    grid-column: 1fr;
+    grid-row: auto;
+    line-height: 35px;
+    font-size: 0.8rem;
+    font-family: soleil;
+  }
+  .billede1 {
+    max-width: 100%;
+  }
+  /* sociale medier styling */
+  .sociale_medier {
+    display: grid;
+    justify-content: left;
+    font-size: 1rem;
+    font-family: dazzle-unicase;
+    gap: 20px;
+  }
+  .sociale_medier_ikoner {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .insta_ikon {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 50%;
+    position: relative;
+    left: -15px;
+  }
+  .insta_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: soleil;
+  }
+  .face_ikon {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 30%;
+  }
+  .face_tekst {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-family: soleil;
+  }
+  /* placering styling */
+  .placering {
+    display: grid;
+    justify-content: left;
+    font-size: 1rem;
+    font-family: dazzle-unicase;
+    gap: 20px;
+    line-height: 35px;
+  }
+  .adresse1 {
+    display: grid;
+    justify-content: left;
+    font-size: 1rem;
+    font-family: dazzle-unicase;
+    gap: 20px;
+    line-height: 35px;
+  }
+  .adresse2 {
+    display: grid;
+    justify-content: left;
+    font-size: 0.8rem;
+    font-family: soleil;
+    line-height: 1.5rem;
+    gap: 20px;
+  }
+  /* google maps styling */
+  .map_wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .map {
+    max-width: 90vw;
+    overflow: hidden;
+    padding-bottom: 65.25%;
+    position: relative;
+    height: 0;
+    border: solid 2px white;
+  }
+  .map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  footer {
+    background-color: #df5b42;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    color: white;
+  }
+
+  footer .footerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+    font-family: soleil;
+    padding: 0.5rem;
+  }
+
+  footer h3 {
+    text-transform: uppercase;
+    font-family: arya-triple;
+    font-size: 1.5rem;
+  }
+
+  footer .ikoner {
+    display: flex;
+    width: 100px;
+  }
+}
