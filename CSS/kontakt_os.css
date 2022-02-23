@@ -150,7 +150,7 @@ nav li {
     display: grid;
     grid-column: 1fr;
     grid-row: auto;
-    height: 640px;
+    /* height: 640px; */
     line-height: 20px;
     font-size: 0.8rem;
     font-family: soleil;
@@ -425,6 +425,7 @@ nav li {
     justify-content: left;
     font-size: 1rem;
     font-family: dazzle-unicase;
+    margin-bottom: 2rem;
   }
   .find_os {
     display: grid;
