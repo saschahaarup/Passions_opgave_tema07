@@ -11,6 +11,8 @@ const contentDest = document.querySelector("#content");
 let vinyler;
 let filter = "alle";
 
+
+
 document.addEventListener("DOMContentLoaded", start);
 
 // Definerer filterKnapper og siger de skal gå til filtrer funktionen når de bliver klikket
@@ -55,8 +57,10 @@ function vis() {
       klon.querySelector(".navn").textContent = `${vinyl.navn}`;
       klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
       klon.querySelector(".year").textContent = `${vinyl.aarstal}`;
-      // ved klik på vinyl image, gå til single view siden
-      klon.querySelector(".vinyl-img").addEventListener("click", () => singleView(vinyl));
+      // ved klik på alt med til-single klassen, gå til single view siden
+      const tilSingleKnap = document.querySelectorAll(".til-single");
+      tilSingleKnap.forEach((singleKnap) => 
+      singleKnap.addEventListener("click", () => singleView(vinyl)));
       contentDest.appendChild(klon);
   }
 });
