@@ -94,6 +94,10 @@ button {
   background-color: #df5b42;
 }
 
+footer p{
+  font-weight: 400;
+}
+
 @media (min-width: 600px) {
   .vinyl-info {
     display: grid;

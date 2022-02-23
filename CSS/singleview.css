@@ -92,6 +92,9 @@ button {
   place-content: center;
   margin: 3rem 0;
 }
+footer p{
+  font-weight: 400;
+}
 
 
 @media (min-width: 900px) {
