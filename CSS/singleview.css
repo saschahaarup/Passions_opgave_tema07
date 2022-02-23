@@ -68,30 +68,51 @@ p {
 }
 
 .beskrivelse {
-  max-width: 600px;
+  max-width: 500px;
   /* text-align: left; */
+  padding: 0 0;
 }
 button {
   background-color: #62c6aa;
   color: #fff;
   border: none;
-  padding: 2px;
+  padding: 20px;
   min-height: 30px;
   min-width: 120px;
   font-family: dazzle-unicase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .back:hover {
   background-color: #df5b42;
   transition: 0.7s;
 }
 
+.back-button-container{
+  display: flex;
+  place-content: center;
+  margin: 3rem 0;
+}
+footer p{
+  font-weight: 400;
+}
+
+
 @media (min-width: 900px) {
-  .back-button-container {
+  button{
+    padding: 2px;
+    font-size: 0.7rem;
+  }
+
+  #notice-and-back {
     display: flex;
-    place-content: end;
+    justify-content: space-between;
     margin: 0 8rem 8rem 8rem;
   }
+
+  .back-button-container{
+    margin:0;
+  }
+
   .vinyler {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -129,5 +150,9 @@ button {
     grid-row: 3;
     grid-column: 2;
     padding: 0;
+  }
+
+  .beskrivelse{
+    padding: 2rem;
   }
 }

@@ -14,7 +14,7 @@ main {
 
 #content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 65px;
   line-height: 30px;
   margin-bottom: 80px;
@@ -94,7 +94,16 @@ button {
   background-color: #df5b42;
 }
 
+footer p{
+  font-weight: 400;
+}
+
 @media (min-width: 600px) {
+
+  #content{
+    margin:0 3rem;
+  }
+
   .vinyl-info {
     display: grid;
     grid-template-columns: auto minmax(auto, 50px);
@@ -119,5 +128,9 @@ button {
   .year {
     text-align: right;
     opacity: 80%;
+  }
+
+  .read-more {
+    display: none;
   }
 }

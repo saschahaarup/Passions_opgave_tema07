@@ -55,12 +55,11 @@ function vis() {
       klon.querySelector(".navn").textContent = `${vinyl.navn}`;
       klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
       klon.querySelector(".year").textContent = `${vinyl.aarstal}`;
-      klon
-        .querySelector(".vinyl-img")
-        .addEventListener("click", () => singleView(vinyl));
+      // ved klik på vinyl image, gå til single view siden
+      klon.querySelector(".vinyl-img").addEventListener("click", () => singleView(vinyl));
       contentDest.appendChild(klon);
-    }
-  });
+  }
+});
 }
 
 function singleView(hvilken) {
