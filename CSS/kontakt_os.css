@@ -7,16 +7,6 @@ img {
   max-width: 100%;
 }
 
-/* Dette var hvis burger menu skulle være til desktop også */
-/* @media (min-width: 1000px) {
-  .click {
-    width: 20vw;
-  }
-  nav li {
-    font-size: 1.8rem;
-  }
-} */
-
 /* styling af siden */
 /* mobil */
 @media only screen and (max-width: 900px) {
