@@ -120,4 +120,8 @@ button {
     text-align: right;
     opacity: 80%;
   }
+
+  .read-more {
+    display: none;
+  }
 }
