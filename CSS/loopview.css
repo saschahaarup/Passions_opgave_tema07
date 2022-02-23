@@ -17,6 +17,7 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 65px;
   line-height: 30px;
+  margin-bottom: 80px;
 }
 
 header {
