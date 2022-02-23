@@ -407,14 +407,6 @@ nav li {
     padding: 1rem;
     color: white;
   }
-
-  footer .footerlogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-  }
-
   footer p {
     font-size: 0.7rem;
     font-family: soleil;
@@ -425,6 +417,7 @@ nav li {
     text-transform: uppercase;
     font-family: arya-triple;
     font-size: 1.5rem;
+    text-align: center;
   }
 
   footer .ikoner {

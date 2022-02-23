@@ -174,6 +174,22 @@ nav li {
   background-color: #df5b42;
   transition: 0.7s;
 }
+.vv {
+  display: flex;
+  justify-content: center;
+}
+.vv a {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.vv a:hover {
+  color: #df5b42;
+  transition: 0.7s;
+}
 
 @media (min-width: 600px) {
   /* knapper */
@@ -263,22 +279,6 @@ nav li {
   footer .ikoner {
     display: flex;
     width: 100px;
-  }
-  .vv {
-    display: flex;
-    justify-content: center;
-  }
-  .vv a {
-    font-size: 3.5rem;
-    text-align: center;
-    color: #fff;
-    padding: 2px;
-    text-decoration: none;
-  }
-
-  .vv a:hover {
-    color: #df5b42;
-    transition: 0.7s;
   }
 }
 
