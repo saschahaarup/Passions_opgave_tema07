@@ -58,11 +58,8 @@ function vis() {
       // ved klik på vinyl image, gå til single view siden
       klon.querySelector(".vinyl-img").addEventListener("click", () => singleView(vinyl));
       contentDest.appendChild(klon);
-    }
-  // Ved klik på læs mere gå til single view siden
-  document.querySelector(".read-more").addEventListener("click", () => singleView(vinyl));
+  }
 });
-  
 }
 
 function singleView(hvilken) {
