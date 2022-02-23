@@ -13,6 +13,7 @@ p {
   text-align: center;
   margin: auto;
   width: 90%;
+  line-height: 2rem;
 }
 
 h2 {
@@ -39,7 +40,7 @@ h2 {
   p {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 60%;
   }
   .vv {
     display: flex;
