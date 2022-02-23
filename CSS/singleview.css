@@ -87,9 +87,9 @@ button {
 }
 
 @media (min-width: 900px) {
-  .back-button-container {
+  #notice-and-back {
     display: flex;
-    place-content: end;
+    justify-content: space-between;
     margin: 0 8rem 8rem 8rem;
   }
   .vinyler {
