@@ -76,7 +76,7 @@ button {
   background-color: #62c6aa;
   color: #fff;
   border: none;
-  padding: 20px;
+  padding: 10px;
   min-height: 30px;
   min-width: 120px;
   font-family: dazzle-unicase;
@@ -95,12 +95,27 @@ button {
 footer p{
   font-weight: 400;
 }
-
+@media (min-width: 600px){
+  .vinyler{
+    display: flex;
+    place-content: center;
+    flex-direction: column;
+  }
+  .beskrivelse{
+    margin: 0 auto;
+  }
+  button{
+    width: fit-content;
+    height: fit-content;
+  }
+}
 
 @media (min-width: 900px) {
   button{
     padding: 2px;
     font-size: 0.7rem;
+    width: 98px;
+    height: 40px;
   }
 
   #notice-and-back {
