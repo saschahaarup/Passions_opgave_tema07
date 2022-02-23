@@ -39,6 +39,22 @@ h2 {
   p {
     text-align: center;
     margin: auto;
-    width: 70%;
+    width: 50%;
+  }
+  .vv {
+    display: flex;
+    justify-content: center;
+  }
+  .vv a {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    text-decoration: none;
+  }
+
+  .vv a:hover {
+    color: #df5b42;
+    transition: 0.7s;
   }
 }

@@ -118,12 +118,12 @@ nav {
   display: flex;
   flex-flow: column;
   /* Dette er hvis det hele skal placeres i højre side, 
-  men man kan ikke gøre det hvis li elementerne skal placeres i midten */
+      men man kan ikke gøre det hvis li elementerne skal placeres i midten */
   /* place-items: end; */
   background-color: #62c6aa;
   /* transition: 10s; */
   opacity: 95%;
-  width: 40vw;
+  width: 200px;
   height: 100vh;
 }
 
@@ -132,7 +132,7 @@ nav {
   justify-content: space-between;
   /* align-content: flex-end; */
   z-index: 30;
-  /* place-content: right; */
+  place-content: right;
 }
 
 nav ul {
@@ -147,11 +147,28 @@ nav ul {
 }
 
 nav li {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 #menufold {
   z-index: 20;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  padding: 20px;
+  color: white;
+}
+/* styling af links */
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: #df5b42;
 }
 
 .vv img {
@@ -172,6 +189,22 @@ nav li {
 
 .vv img:hover {
   background-color: #df5b42;
+  transition: 0.7s;
+}
+.vv {
+  display: flex;
+  justify-content: center;
+}
+.vv a {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.vv a:hover {
+  color: #df5b42;
   transition: 0.7s;
 }
 
@@ -264,6 +297,8 @@ nav li {
     display: flex;
     width: 100px;
   }
+
+  /* refererer til pilen på forsiden */
   .vv {
     display: flex;
     justify-content: center;
