@@ -7,16 +7,6 @@ img {
   max-width: 100%;
 }
 
-/* Dette var hvis burger menu skulle være til desktop også */
-/* @media (min-width: 1000px) {
-  .click {
-    width: 20vw;
-  }
-  nav li {
-    font-size: 1.8rem;
-  }
-} */
-
 /* styling af siden */
 /* mobil */
 @media only screen and (max-width: 900px) {
@@ -317,6 +307,15 @@ img {
     top: -70px;
     z-index: +1; */
   }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    /* align-content: flex-end; */
+    z-index: 30;
+    /* align-items: center; */
+    margin-right: 40px;
+  }
   nav ul {
     /* display: grid; */
     display: flex;
@@ -325,8 +324,11 @@ img {
     gap: 60px;
     padding: 20px;
     color: white;
+    list-style-type: none;
   }
+
   /* styling af links */
+
   a {
     text-decoration: none;
     color: white;
