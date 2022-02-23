@@ -477,6 +477,7 @@ nav li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     color: white;
+    padding-top: 0.5rem;
   }
 
   footer .footerlogo {
@@ -491,6 +492,7 @@ nav li {
     font-size: 0.7rem;
     font-family: soleil;
     padding: 0.5rem;
+    line-height: 1.5rem;
   }
 
   footer h3 {
@@ -504,6 +506,9 @@ nav li {
     display: flex;
     width: 100px;
     position: relative;
-    left: 190px;
+    /* left: 190px; */
+    padding-top: 1rem;
+    gap: 0.5rem;
+    margin: 0 auto;
   }
 }
