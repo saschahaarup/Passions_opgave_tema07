@@ -94,14 +94,13 @@ button {
   background-color: #df5b42;
 }
 
-footer p{
+footer p {
   font-weight: 400;
 }
 
 @media (min-width: 600px) {
-
-  #content{
-    margin:0 3rem;
+  #content {
+    margin: 0 3rem;
   }
 
   .vinyl-info {
