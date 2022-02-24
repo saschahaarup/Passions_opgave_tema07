@@ -590,7 +590,7 @@ nav li {
       margin: 0 auto;
     }
   }
-}
+
 
 /* desktop */
 @media only screen and (min-width: 901px) {
@@ -847,4 +847,4 @@ nav li {
     margin: 0 auto;
   }
 } 
-}
+

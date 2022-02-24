@@ -57,7 +57,7 @@ function vis() {
       klon.querySelector(".navn").textContent = `${vinyl.navn}`;
       klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
       klon.querySelector(".year").textContent = `${vinyl.aarstal}`;
-      // ved klik på alt med til-single klassen, gå til single view siden
+      // ved klik på alt med til-single klassen, gå til single view siden <<----- fuckede det hele op
       /*const tilSingleKnap = document.querySelectorAll(".til-single");
       tilSingleKnap.forEach((singleKnap) => 
       singleKnap.addEventListener("click", () => singleView(vinyl)));*/
