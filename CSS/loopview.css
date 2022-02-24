@@ -55,6 +55,20 @@ p {
   cursor: pointer;
 }
 
+/* overlay med hover effekt over billeder */
+
+.p_overlay {
+  display: none;
+}
+
+.container_img {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+}
+
 .kunstner {
   text-align: center;
 }
@@ -94,14 +108,13 @@ button {
   background-color: #df5b42;
 }
 
-footer p{
+footer p {
   font-weight: 400;
 }
 
 @media (min-width: 600px) {
-
-  #content{
-    margin:0 3rem;
+  #content {
+    margin: 0 3rem;
   }
 
   .vinyl-info {
@@ -132,5 +145,44 @@ footer p{
 
   .read-more {
     display: none;
+  }
+}
+
+@media (min-width: 901px) {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #62c6aa;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    /* lægge opacity 0 ind når det virker */
+    opacity: 0%;
+    transition: 0.5s ease;
+    display: block;
+  }
+
+  .container_img:hover .overlay {
+    opacity: 80%;
+  }
+
+  .p_overlay {
+    display: flex;
+    text-decoration: underline;
+    object-position: center center;
+    font-weight: 1.6rem;
+    place-content: center center;
+  }
+
+  .container_img {
+    place-content: center;
+    align-items: center;
+    display: grid;
+    aspect-ratio: 1/1;
+  }
+
+  .overlay p {
+    font-size: 1.4rem;
   }
 }
