@@ -152,7 +152,7 @@ footer p {
   .overlay {
     height: 100%;
     width: 100%;
-    background-color: #62c6aa;
+    background-color: #df5b42;
     top: 0;
     left: 0;
     position: absolute;
@@ -163,6 +163,7 @@ footer p {
     display: block;
     display: flex;
     place-content: center;
+    cursor: pointer;
   }
 
   .container_img:hover .overlay {
