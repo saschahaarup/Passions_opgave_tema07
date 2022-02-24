@@ -90,6 +90,10 @@ header h2 {
   padding: 20px;
 }
 
+nav li {
+  font-family: dazzle-unicase;
+}
+
 /* styling af links */
 a {
   text-decoration: none;
