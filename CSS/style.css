@@ -86,8 +86,8 @@ header h2 {
 }
 
 .logo {
-  width: 110px;
-  padding: 20px;
+  width: 130px;
+  padding: 10px;
 }
 
 nav li {
@@ -152,12 +152,12 @@ a:hover {
   }
 
   header {
-    background-image: url("/billeder/splashbillede.jpg");
+    background-image: url("/billeder/mørkere.png");
     background-size: cover;
     width: 100%;
     height: 600px;
-    filter: opacity(80%);
     background-position: 0 70%;
+    filter: opacity(80%);
   }
 
   button {
