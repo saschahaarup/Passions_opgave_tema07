@@ -95,6 +95,10 @@ button {
 footer p{
   font-weight: 400;
 }
+
+.notice{
+  font-style: italic;
+}
 @media (min-width: 600px){
   .vinyler{
     display: flex;
@@ -118,14 +122,9 @@ footer p{
     height: 40px;
   }
 
-  #notice-and-back {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 8rem 8rem 8rem;
-  }
-
   .back-button-container{
-    margin:0;
+    place-content: end;
+    /* margin: 0 8rem 8rem 8rem; */
   }
 
   .vinyler {
@@ -169,5 +168,9 @@ footer p{
 
   .beskrivelse{
     padding: 2rem;
+  }
+  .notice{
+    place-self: start;
+    padding: 0;
   }
 }
