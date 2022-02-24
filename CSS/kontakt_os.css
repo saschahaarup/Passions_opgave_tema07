@@ -49,6 +49,10 @@ h2 {
   font-size: 2rem;
 }
 
+nav li {
+  font-family: dazzle-unicase;
+}
+
 @media (min-width: 1000px) {
   .click {
     width: 20vw;
