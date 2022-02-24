@@ -127,7 +127,7 @@ nav li {
   }
   .kontakt {
     display: grid;
-    grid-column: 1fr;
+    grid-column: 1;
     grid-row: auto;
     /* height: 640px; */
     line-height: 20px;
@@ -321,7 +321,7 @@ nav li {
     justify-content: space-between;
     /* align-content: flex-end; */
     z-index: 30;
-    place-content: right;
+    /* place-content: right; */
   }
 
   nav ul {
