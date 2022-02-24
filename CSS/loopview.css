@@ -158,7 +158,7 @@ footer p {
     left: 0;
     position: absolute;
     z-index: 100;
-    /* lægge opacity 0 ind når det virker */
+    /* Dette gør at den ikke er synlig før man hover over billedet */
     opacity: 0%;
     transition: 0.5s ease;
     display: block;
