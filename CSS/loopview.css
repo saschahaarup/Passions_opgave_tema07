@@ -161,7 +161,7 @@ footer p {
     /* Dette gør at den ikke er synlig før man hover over billedet */
     opacity: 0%;
     transition: 0.5s ease;
-    display: block;
+    /* display: block; */
     display: flex;
     place-content: center;
     cursor: pointer;
