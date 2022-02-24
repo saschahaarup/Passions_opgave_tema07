@@ -341,7 +341,6 @@ a:hover {
     justify-content: space-between;
     /* align-content: flex-end; */
     z-index: 30;
-    place-content: right;
   }
 
   nav ul {
