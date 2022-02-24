@@ -161,6 +161,8 @@ footer p {
     opacity: 0%;
     transition: 0.5s ease;
     display: block;
+    display: flex;
+    place-content: center;
   }
 
   .container_img:hover .overlay {
@@ -170,13 +172,12 @@ footer p {
   .p_overlay {
     display: flex;
     text-decoration: underline;
-    object-position: center center;
     font-weight: 1.6rem;
-    place-content: center center;
+    align-items: center;
   }
 
   .container_img {
-    place-content: center;
+    /* place-content: center; */
     align-items: center;
     display: grid;
     aspect-ratio: 1/1;
