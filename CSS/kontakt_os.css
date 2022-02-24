@@ -7,80 +7,6 @@ img {
   max-width: 100%;
 }
 
-/* BURGERMENU */
-
-.streg {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  margin-top: 5px;
-}
-
-#menu_streger {
-  width: 30px;
-  height: 40px;
-  margin: 20px;
-  cursor: pointer;
-  opacity: 100%;
-  margin-left: auto;
-}
-
-nav {
-  display: none;
-  text-align: center;
-}
-
-.click {
-  display: flex;
-  flex-flow: column;
-  /* Dette er hvis det hele skal placeres i højre side, 
-      men man kan ikke gøre det hvis li elementerne skal placeres i midten */
-  /* place-items: end; */
-  background-color: #62c6aa;
-  /* transition: 10s; */
-  opacity: 95%;
-  width: 40vw;
-  height: 100vh;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  /* align-content: flex-end; */
-  z-index: 30;
-  place-content: right;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: nowrap;
-  /* justify-content: space-between; */
-  gap: 40px;
-  /* padding: 20px; */
-  list-style-type: none;
-  color: white;
-  flex-direction: column;
-}
-
-nav li {
-  font-size: 1rem;
-}
-
-#menufold {
-  z-index: 20;
-}
-
-.click {
-  width: 30vw;
-}
-
-nav li {
-  font-size: 1.2rem;
-}
-
 footer {
   background-color: #df5b42;
   text-align: center;
@@ -670,6 +596,14 @@ h2 {
     z-index: +1; */
   }
 
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 20px;
+    color: white;
+  }
+
   .navigation {
     display: flex;
     justify-content: space-between;
@@ -687,6 +621,10 @@ h2 {
     padding: 20px;
     color: white;
     list-style-type: none;
+  }
+
+  nav li {
+    font-size: 1.2rem;
   }
 
   /* styling af links */
