@@ -26,6 +26,7 @@ header {
   width: 100%;
   height: 500px;
   filter: opacity(80%);
+  background-position: 0% 90%;
 }
 h1 {
   text-align: center;
