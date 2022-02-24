@@ -163,6 +163,7 @@ nav li {
     padding-bottom: 40px;
     order: 3;
   }
+
   .insta_ikon {
     grid-column: 1/2;
     grid-row: 1/2;
