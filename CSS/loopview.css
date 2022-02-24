@@ -28,10 +28,8 @@ header {
   width: 100%;
   object-fit: cover;
   filter: opacity(80%);
-  background-position: 50%;
   position: absolute;
   z-index: -1;
-  position: 0 50%;
 }
 
 h1 {
@@ -135,7 +133,7 @@ footer p {
     object-fit: cover;
     position: absolute;
     z-index: -1;
-    position: 0 80%;
+    object-position: 0 65%;
   }
 
   .vinyl-info {
@@ -194,7 +192,6 @@ footer p {
   .p_overlay {
     display: flex;
     text-decoration: underline;
-    font-weight: 1.6rem;
     align-items: center;
   }
 
