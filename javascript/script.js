@@ -1,4 +1,5 @@
 const jsonUrl = "https://passionprojekt-7e1a.restdb.io/rest/plader";
+
 const options = {
   headers: {
     "x-apikey": "620f6a1b34fd6215658587b8",
@@ -58,10 +59,12 @@ function vis() {
       klon.querySelector(".kunstner").textContent = `${vinyl.kunstner}`;
       klon.querySelector(".year").textContent = `${vinyl.aarstal}`;
       // ved klik på alt med til-single klassen, gå til single view siden <<----- fuckede det hele op
-      /*const tilSingleKnap = document.querySelectorAll(".til-single");
+      
+      const tilSingleKnap = klon.querySelectorAll(".til-single");
       tilSingleKnap.forEach((singleKnap) => 
-      singleKnap.addEventListener("click", () => singleView(vinyl)));*/
-      klon.querySelector("article").addEventListener("click", () => singleView(vinyl));
+      singleKnap.addEventListener("click", () => singleView(vinyl)));
+
+      // klon.querySelector("article").addEventListener("click", () => singleView(vinyl));
       contentDest.appendChild(klon);
   }
 });
